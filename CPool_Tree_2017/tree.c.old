@@ -1,0 +1,38 @@
+/*
+** EPITECH PROJECT, 2017
+** FirTree
+** File description:
+** thomas.foubert@epitech.eu
+*/
+
+void my_putchar (char c)
+{
+	write(1, &c, 1);
+}
+
+int calculate_param ();
+
+int make_line(int total_line_size, int total_star)
+{
+	for (int i = 0; i < (size * 4); i++) {
+		for (int j = 0; j < (total_line_size - total_star); j++)
+			my_putchar(' ');
+		for (int k = 0; k < total_star; k++)
+			my_putchar('*');
+		my_putchar('\n');
+		total_star = total_star + 2;
+		total_line_size++;
+	}
+	return (total_line_size);
+}
+
+int build_line_struct (int branch, int size, int total_star, int i)
+{
+	
+	if branch > 2) {
+		total_line_size--;
+		total_star = total_star - (;
+	}
+	make_line(total_line_size, total_star));
+
+}

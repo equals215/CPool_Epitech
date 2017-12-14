@@ -1,0 +1,10 @@
+String 1, String 2, Match Result, Waited result
+tototo, tototo, 1, 1
+tototo, to*, 1, 1
+tototo, tott*, 0, 0
+tototo, t*o*t*, 1, 1
+tototo, *, 1, 1
+tototo, ***, 1, 1
+je suis davasse, *e*s*e, 1, 1
+1234242, *2*, 1, 1
+1234242, 2*, 0, 0

@@ -1,0 +1,21 @@
+/*
+** EPITECH PROJECT, 2017
+** tests-match.c
+** File description:
+** thomas.foubert@epitech.eu
+*/
+#include <stdio.h>
+
+int main(int argc, char const *argv[]) {
+	printf("%s\n", "String 1, String 2, Match Result, Waited result");
+	printf("%s, %s, %d, %d\n", "tototo", "tototo", match("tototo", "tototo"), 1);
+	printf("%s, %s, %d, %d\n", "tototo", "to*", match("tototo", "to*"), 1);
+	printf("%s, %s, %d, %d\n", "tototo", "tott*", match("tototo", "tott*"), 0);
+	printf("%s, %s, %d, %d\n", "tototo", "t*o*t*", match("tototo", "t*o*t*"), 1);
+	printf("%s, %s, %d, %d\n", "tototo", "*", match("tototo", "*"), 1);
+	printf("%s, %s, %d, %d\n", "tototo", "***", match("tototo", "***"), 1);
+	printf("%s, %s, %d, %d\n", "je suis davasse", "*e*s*e", match("je suis davasse", "*e*s*e"), 1);
+	printf("%s, %s, %d, %d\n", "1234242", "*2*", match("1234242", "*2*"), 1);
+	printf("%s, %s, %d, %d\n", "1234242", "2*", match("1234242", "2*"), 0);
+	return (0);
+}
